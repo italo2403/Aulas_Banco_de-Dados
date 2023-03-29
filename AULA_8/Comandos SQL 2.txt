@@ -1,0 +1,80 @@
+--create database x;
+--GO
+--use x;
+--create table cadfun(CODFUN integer,
+--					NOME varchar(40),
+--					DEPTO varchar(2),
+--					FUNCAO varchar(20),
+--					SALARIO decimal(10,2));
+
+--insert into cadfun
+--				(CODFUN, NOME, DEPTO, FUNCAO, SALARIO)
+--values
+--				(1, 'Carlos Alberto'	, 1, 'Vendedor'		, 1530),
+--				(2, 'Marcelo Henrique'	, 5, 'Gerente'		, 1590),
+--				(3, 'Aparecida Silva'	, 4, 'Secretaria'	, 1630),
+--				(4, 'Silvana Pacheco'	, 3, 'Supervisora'	, 1410),
+--				(5, 'Marcelo Souza'		, 3, 'Analista'		, 1500),
+--				(6, 'Marisilva Neves'	, 2, 'Secretaria'	, 1500),
+--				(7, 'Wilson de Macedo'	, 1, 'Programador'	, 1330),
+--				(8, 'Augusto Souza'		, 3, 'Programador'	, 1230),
+--				(9, 'Carlos Bastos'		, 4, 'Vendedor'		, 1600),
+--				(10, 'Silva Santos'		, 5, 'Supervisor'	, 1530),
+--				(11, 'Ana Bastos'		, 1, 'Vendedora'	, 1580),
+--				(12, 'Paulo da Silva'	, 2, 'Vendedor'		, 1510);
+
+--select * from cadfun;			
+--select NOME,FUNCAO from cadfun;
+--select nome from cadfun where depto = '3';
+--select nome,salario from cadfun order by nome asc;
+--select nome,salario from cadfun order by nome desc;
+--select * from cadfun where codfun = '7';
+
+--update cadfun set salario = 2300.56 where codfun = 7;
+
+--select * from cadfun where nome = 'ana bastos';
+
+--update cadfun set depto = '3' where nome = 'ana bastos';
+
+--update cadfun set salario *= 1.1; 
+
+--select * from cadfun where salario >= 2000;
+
+--select * from cadfun where nome like 'silva %' or
+--						   nome like '% silva' or
+--						   nome like '% silva %';
+
+--select * from cadfun where ' ' + nome + ' ' like '% silva %';
+--OU 
+--select * from cadfun where CONCAT(' ',nome,' ') like '% silva %';
+
+--select * from cadfun where nome like 'M%';
+
+--select * from cadfun where funcao = 'programador' or funcao = 'analista';
+--OU
+--select * from cadfun where funcao in ('programador', 'analista');
+
+--select * from cadfun where funcao != 'programador' AND funcao != 'analista';
+--OU
+--select * from cadfun where funcao not in ('programador', 'analista');
+
+--select * from cadfun where salario >= 1500 AND salario <= 2000;
+--OU
+--select * from cadfun where salario between 1500 and 2000;
+
+--select * from cadfun where salario < 1500 OR salario > 2500;
+--OU
+--select * from cadfun where salario not between 1500 and 2000;
+
+--update cadfun set funcao = NULL where funcao = 'vendedor' or funcao = 'vendedora';
+--OU
+--update cadfun set funcao = NULL where funcao like 'vendedor%';
+--OU
+--update cadfun set funcao = NULL where funcao in ('vendedor','vendedora');
+
+--select * from cadfun where funcao is null;
+
+--select * from cadfun where funcao is not null;
+
+--select * from cadfun;
+

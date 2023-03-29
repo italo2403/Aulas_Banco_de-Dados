@@ -1,0 +1,107 @@
+-- Linha de comentário
+--CREATE DATABASE BancoDados;
+--USE BancoDados;
+--ALTER DATABASE Bancodados MODIFY NAME = Banco_de_Dados;
+--USE master;
+--DROP DATABASE Banco_de_Dados;
+
+--=========================================================
+
+--CREATE DATABASE Marcelino;
+--USE Marcelino;
+--ALTER DATABASE MARcelino MODIFY NAME = teste;
+--USE MASTER;
+--DROP DATABASE TESte;
+
+--=========================================================
+
+--CREATE DATABASE BancoDados;
+--GO
+--USE BancoDados;
+--CREATE TABLE Dept (	DeptNume INTEGER,
+					--DeptNome VARCHAR(20),
+					--DeptLoca VARCHAR(20),
+					--DeptOrca DECIMAL(12,2) );
+--select * FROM Dept;
+--ALTER TABLE Dept ADD DeptSala CHAR(2);
+--SELECT * FROM Dept;
+--ALTER TABLE Dept ALTER COLUMN DeptNome VARCHAR(50);
+--ALTER TABLE Dept DROP COLUMN DeptSala;
+--DROP TABLE Dept;
+--USE MASTER;
+--DROP DATABASE BancoDados;
+
+--=========================================================
+
+--CREATE DATABASE Banco;
+--GO
+--USE Banco;
+--ALTER DATABASE Banco MODIFY NAME = Agenda;
+--CREATE TABLE PESSOAL (	TELEFONE	CHAR(10),
+--						NOME		VARCHAR(50),
+--						ENDEREÇO	VARCHAR(100), );
+--ALTER TABLE PESSOAL ADD OBSERVACAO VARCHAR(200);
+--ALTER TABLE PESSOAL ALTER COLUMN TELEFONE CHAR(15);
+--ALTER TABLE PESSOAL ADD NOTA VARCHAR(200);
+--ALTER TABLE PESSOAL DROP COLUMN OBSERVACAO;
+
+--=========================================================
+
+--CREATE TABLE Dept (	DeptNume INTEGER,
+--					DeptNome VARCHAR(20),
+--					DeptLoca VARCHAR(20),
+--					DeptOrca DECIMAL(12,2) );
+
+--INSERT INTO Dept
+--	(DeptNume, DeptNome, DeptLoca, DeptOrca)
+--VALUES
+--	(70, 'Producao', 'Recife', 10000);
+
+--SELECT * FROM Dept;
+--UPDATE Dept SET DeptNome = 'Pessoal';
+--DELETE FROM Dept;
+
+--INSERT INTO Dept (DeptNume, DeptNome, DeptLoca, DeptOrca)
+--VALUES
+--	(10, 'Producao', 'Recife', 15000),
+--	(20, 'Pessoal', 'Olinda', 20000),	
+--	(30, 'Contábil', 'Olinda', 30000),
+--	(40, 'Contábil', 'Olinda', 40000),
+--	(50, 'Contábil', 'Recife', 50000);
+
+--DELETE FROM Dept WHERE deptloca = 'Recife' OR deptorca >= 40000;
+
+--UPDATE dept
+--SET deptnome = 'Estoque'
+--WHERE deptnome = 'Pessoal';
+
+--DELETE FROM dept;
+
+--SELECT * FROM Dept;
+
+--CREATE DATABASE Marcelino;
+--USE Marcelino;
+
+--CREATE TABLE cadfun (	CADFUN	VARCHAR(10),
+--						NOME	CHAR(40),
+--						DEPTO	CHAR(2),
+--						FUNCAO	CHAR(20),
+--						SALARIO DECIMAL(10,2) );
+
+--INSERT INTO cadfun 
+--	(CADFUN, NOME, DEPTO, FUNCAO, SALARIO)
+--VALUES
+--	(1,	'CARLOS ALBERTO', 3, 'VENDEDOR', 1530.00),
+--	(2,	'MARCOS HENRIQUE',2,'GERENTE',1985.75),
+--	(3,	'APARECIDA SILVA',3,'SCRETARIA',1200.30),
+--	(4,	'SILVANA PACHECO',5,'SUPERVISORA',2250.11),
+--	(5,	'MARCELO SOUZA',3,'ANALISTA',1200.50),
+--	(6,	'MARISILVA NEVES',2,'SECRETARIA',1050.00),
+--	(7,	'WILSON DE MARCEDO',3,'PROGRAMADOR',1050.50),
+--	(8,	'AUGUSTO SOUZA',3,'PROGRAMADOR',1530.00),
+--	(9,	'CARLOS BASTOS',5,'VENDEDOR',1599.51),
+--	(10,'SILVA SANTOS',3,'SUPERVISOR',1530.00),
+--	(11,'ANA BASTOS',5,'VENDEDORA',1530.00),
+--	(12,'PAULO DA SILVA',2,'VENDEDOR',150.00);
+
+	SELECT * FROM cadfun;
